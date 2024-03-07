@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg-green: linear-gradient(
+    90deg,
+    rgba(4, 57, 46, 1) 0%,
+    rgba(0, 153, 102, 1) 100%
+  );
+  --bg-red: linear-gradient(
+    90deg,
+    rgb(39, 0, 0) 0%,
+    rgb(149, 0, 0) 100%
+  );
+  --bg-brown: linear-gradient(
+    90deg,
+    rgba(99, 61, 0, 1) 0%,
+    rgba(149, 93, 0, 1) 100%
+  );
+  --bg-modal: #0e110eaf;
+  --text-dark: rgb(54, 54, 54);
+  --text-light: #c7c7c7;
+  --text-gold: rgb(255, 217, 0);
+  --dark: #080808;
+  --border: 0.1rem solid rgb(224, 224, 224);
+}
+
+body {
+  background: var(--bg-green);
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: center;
+  margin: 0;
+  justify-content: space-evenly;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h1:hover, 
+h2:hover {
+  cursor: default;
+
+}
+
+#info {
+  text-align: center;
+  width: 15rem;
+  color: var(--text-gold);
+}
+
+#info-title {
+  font-size: 2rem;
+}
+
+.info-player {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding:0.5rem;
+  border-radius: 0.3rem;
+  border: var(--border);
+  color: var(--dark);
+  background-color: white;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 25rem;
+  width: 25rem;
+  grid-gap: 0.4rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  background: var(--bg-brown);
+}
+
+.grid-square {
+  background: white;
+  border-radius: 0.3rem;
+}
+
+.grid-square:hover {
+  cursor: pointer;
+}
