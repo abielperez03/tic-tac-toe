@@ -34,6 +34,28 @@
       <div id="grid-square-8" class="grid-square"></div>
       <div id="grid-square-9" class="grid-square"></div>
     </div>
+    <div id="instructions">
+      <h2 id="instructions-text">Click the button to start</h2>
+      <button id="instructions-btn">Start Game</button>
+    </div>
+    <div id="modal">
+      <div id="modal-content">
+        <h2>Player Name</h2>
+        <form>
+          <label for="player1">Player 1</label>
+          <input type="text" id="player1" 
+            name="player1" placeholder="Player 1"
+            maxlength="8" required
+          >
+          <label for="player2">Player 2</label>
+          <input type="text" id="player2" 
+            name="player2" placeholder="Player 2"
+            maxlength="8" required
+          >
+          <input type="submit" value="Start Game">
+        </form>
+      </div>
+    </div>
   
     <script src="script.js"></script>
   </body>
